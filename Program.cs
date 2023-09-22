@@ -15,17 +15,25 @@
                 Console.WriteLine("Введите число: ");
                 x = Convert.ToInt32(Console.ReadLine());
 
-                if (x > maxValue1)
+                if (x > maxValue1 && x != maxValue1 && x != maxValue2)
                 {
                     maxValue1 = x;
+                }
+                else if (x > maxValue2)
+                {
+                    maxValue2 = x;
                 }
 
                 Console.WriteLine("Введите число: ");
                 x = Convert.ToInt32(Console.ReadLine());
 
-                if (x > maxValue2)
+                if (x > maxValue2 && x != maxValue1 && x!= maxValue2)
                 {
                     maxValue2 = x;
+                }
+                else if (x > maxValue1)
+                {
+                    maxValue1 = x;
                 }
             }
 
